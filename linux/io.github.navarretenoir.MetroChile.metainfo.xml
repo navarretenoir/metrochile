@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>cl.kotone.MetroChile</id>
+  <id>io.github.navarretenoir.MetroChile</id>
   <name>Metro Chile</name>
   <summary>Estado de la red del Metro en vivo, plano y estaciones</summary>
+  <summary xml:lang="en">Live status of the Santiago Metro network (unofficial app)</summary>
   <developer id="cl.javieranavarrete"><name>Javiera Navarrete</name></developer>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
@@ -10,8 +11,12 @@
     <p>Estado en vivo de las líneas y estaciones del Metro de Santiago, plano de la red y la estación más cercana.
        App no oficial: no está afiliada a Metro S.A.; los datos son públicos de metro.cl.</p>
     <p>Desarrollado por Javiera Navarrete.</p>
+    <p xml:lang="en">Metro Chile shows the live status of Santiago Metro lines and stations, the network map, the nearest station and local weather. Unofficial app, not affiliated with Metro S.A. No ads, no trackers. Developed by Javiera Navarrete.</p>
   </description>
-  <launchable type="desktop-id">cl.kotone.MetroChile.desktop</launchable>
+  <url type="homepage">https://github.com/navarretenoir/metro-chile</url>
+  <url type="vcs-browser">https://gitlab.com/navarretenoir/metro-chile</url>
+  <url type="bugtracker">https://gitlab.com/navarretenoir/metro-chile/-/issues</url>
+  <launchable type="desktop-id">io.github.navarretenoir.MetroChile.desktop</launchable>
   <provides><binary>metro-chile</binary></provides>
   <content_rating type="oars-1.1"/>
   <releases><release version="2.0" date="2026-10-31"/></releases>

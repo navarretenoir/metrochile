@@ -13,7 +13,7 @@
 #ifndef METRO_ROOT
 #define METRO_ROOT "."
 #endif
-#define APP_ID "cl.kotone.MetroChile"
+#define APP_ID "io.github.navarretenoir.MetroChile"
 
 static GtkApplication *APPL;
 static WebKitWebView *WEB;
