@@ -16,6 +16,9 @@
   <url type="homepage">https://github.com/navarretenoir/metrochile</url>
   <url type="vcs-browser">https://gitlab.com/navarretenoir/metrochile</url>
   <url type="bugtracker">https://gitlab.com/navarretenoir/metrochile/-/issues</url>
+  <screenshots>
+    <screenshot type="default"><image>https://raw.githubusercontent.com/navarretenoir/metrochile/main/screenshots/1.png</image></screenshot>
+  </screenshots>
   <launchable type="desktop-id">io.github.navarretenoir.MetroChile.desktop</launchable>
   <provides><binary>metro-chile</binary></provides>
   <content_rating type="oars-1.1"/>
