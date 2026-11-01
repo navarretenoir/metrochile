@@ -1,0 +1,16 @@
+Source: metro-chile
+Section: utils
+Priority: optional
+Maintainer: Javiera Navarrete <navarrete.noir@gmail.com>
+Build-Depends: debhelper-compat (= 13), pkgconf, libgtk-4-dev, libwebkitgtk-6.0-dev, libjson-glib-dev, libcurl4-openssl-dev
+Standards-Version: 4.7.0
+Homepage: https://github.com/navarretenoir/metrochile
+Rules-Requires-Root: no
+
+Package: metro-chile
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Live status of the Santiago Metro network (unofficial)
+ Live status of the lines and stations of the Santiago Metro, network map and
+ nearest station, with the local weather. Unofficial app, not affiliated with
+ Metro S.A.; data is public from metro.cl. Interface in Spanish.

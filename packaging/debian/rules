@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+D = $(CURDIR)/debian/metro-chile
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	make -C desktop ROOT=/usr/share/metro-chile EXTRA_CFLAGS="$(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell dpkg-buildflags --get LDFLAGS)"
+
+override_dh_auto_install:
+	install -Dm755 desktop/metro-app "$(D)/usr/bin/metro-chile"
+	install -d "$(D)/usr/share/metro-chile"; cp -r ui "$(D)/usr/share/metro-chile/"
+	install -Dm644 linux/io.github.navarretenoir.MetroChile.desktop "$(D)/usr/share/applications/io.github.navarretenoir.MetroChile.desktop"
+	install -Dm644 linux/io.github.navarretenoir.MetroChile.metainfo.xml "$(D)/usr/share/metainfo/io.github.navarretenoir.MetroChile.metainfo.xml"
+	install -Dm644 linux/io.github.navarretenoir.MetroChile.svg "$(D)/usr/share/icons/hicolor/scalable/apps/io.github.navarretenoir.MetroChile.svg"
+
+override_dh_auto_clean:
+	-$(MAKE) -C desktop clean
