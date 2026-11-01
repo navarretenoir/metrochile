@@ -24,3 +24,19 @@ y clima del lugar. Avisa cuando aparece un problema nuevo en la red. Sin publici
 
 - Estado de la red: sitio público de Metro de Santiago. Clima: [Open-Meteo](https://open-meteo.com) (CC BY 4.0).
 - Tipografía Inter (SIL Open Font License). TLS de Symbian: Bouncy Castle (licencia MIT, ver `symbian/res/LICENCIAS.txt`).
+
+
+---
+
+## English
+
+**Metro Chile** shows the live status of Santiago Metro lines and stations, the network map, the nearest station and local weather,
+and notifies when a new problem appears on the network. No ads, no trackers, no accounts.
+
+> **Unofficial app.** Not affiliated with or endorsed by Metro S.A. Data comes from the public Metro de Santiago website (metro.cl)
+> and Open-Meteo.
+
+Platforms: Android 5.0+, Linux (RPM, DEB, AppImage, Flatpak, Snap), Windows 10/11 (and 7/8.1 with WebView2), macOS (Intel and Apple
+Silicon), iOS/iPadOS and Symbian / Java ME (with its own TLS 1.2). The interface is in Spanish (Chile).
+
+**Developed by Javiera Navarrete** · License [GPL-3.0-or-later](LICENSE).
