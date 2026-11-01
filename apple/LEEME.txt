@@ -1,0 +1,11 @@
+Metro para macOS e iOS — desarrollado por Javiera Navarrete.
+Estado en vivo de las líneas y estaciones del Metro de Santiago, plano y estación más cercana. App no oficial.
+
+macOS 11+ (binario universal: Apple Silicon e Intel) e iOS/iPadOS 15+. Misma interfaz que Android y Linux, dentro de
+WKWebView (Comun/AnfitrionWeb.swift); configuración en Metro/Config.swift.
+
+Compilar en un Mac:  brew install xcodegen && ./preparar-web.sh && xcodegen generate && open Metro.xcodeproj
+  · macOS: esquema Metro-macOS → Product › Archive (firma «Sign to Run Locally» o tu ID de Apple).
+  · iOS: esquema Metro-iOS → elige tu iPhone; con un ID de Apple gratis la app dura 7 días (después se reinstala);
+    con la cuenta de desarrollador (USD 99/año) dura 1 año y se puede publicar en TestFlight/App Store.
+Sin Mac: el flujo .github/workflows/apple.yml compila ambas versiones (sin firmar) en un Mac de GitHub.

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MetroChile para Windows — Visual Studio 2022 (C, Win32 + WebView2). Desarrollado por Javiera Navarrete.
+     Restaurar paquetes NuGet (Microsoft.Web.WebView2) y compilar Release. La compilación oficial usa MinGW
+     (~/.local/share/kotone-herramientas/winhost/construir.sh) con el mismo código. -->
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32"><Configuration>Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals"><ProjectGuid>{7A1C2E40-5B3D-4F61-8E2A-1C9D3B4E5F21}</ProjectGuid><RootNamespace>MetroChile</RootNamespace><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration"><ConfigurationType>Application</ConfigurationType><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionTargets"><Import Project="..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\native\Microsoft.Web.WebView2.targets')" /></ImportGroup>
+  <ItemDefinitionGroup>
+    <ClCompile><CompileAs>CompileAsC</CompileAs><RuntimeLibrary>MultiThreaded</RuntimeLibrary><Optimization>MinSpace</Optimization>
+      <PreprocessorDefinitions>WINVER=0x0601;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions></ClCompile>
+    <Link><SubSystem>Windows</SubSystem><EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <AdditionalDependencies>ole32.lib;oleaut32.lib;shell32.lib;shlwapi.lib;winhttp.lib;uuid.lib;user32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies></Link>
+  </ItemDefinitionGroup>
+  <ItemGroup><ClCompile Include="..\src\webhost.c" /></ItemGroup>
+  <ItemGroup><ClInclude Include="..\src\config.h" /></ItemGroup>
+  <ItemGroup><ResourceCompile Include="..\build\app.rc" /></ItemGroup>
+  <ItemGroup><None Include="packages.config" /></ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

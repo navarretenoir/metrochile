@@ -1,0 +1,55 @@
+# Metro para macOS (Intel + Apple Silicon, binario universal) e iOS/iPadOS — proyecto XcodeGen.
+# Generar: brew install xcodegen && ./preparar-web.sh && xcodegen generate && open Metro.xcodeproj
+# Desarrollado por Javiera Navarrete.
+name: Metro
+options:
+  bundleIdPrefix: cl.javieranavarrete
+  deploymentTarget: { iOS: "15.0", macOS: "11.0" }
+  createIntermediateGroups: true
+settings:
+  base:
+    MARKETING_VERSION: "2.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    INFOPLIST_KEY_NSHumanReadableCopyright: "© 2026 Javiera Navarrete. Desarrollado por Javiera Navarrete."
+targets:
+  Metro-macOS:
+    type: application
+    platform: macOS
+    sources: [Comun, Metro, { path: Recursos/web, type: folder, buildPhase: resources }, Recursos/Assets.xcassets]
+    settings:
+      base:
+        PRODUCT_NAME: Metro
+        PRODUCT_BUNDLE_IDENTIFIER: cl.javieranavarrete.metro
+        ARCHS: "$(ARCHS_STANDARD)"          # arm64 + x86_64: corre nativo en Apple Silicon e Intel
+        ONLY_ACTIVE_ARCH: NO
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_ENTITLEMENTS: Recursos/Metro.entitlements
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+    info:
+      path: Recursos/Info-macOS.plist
+      properties:
+        CFBundleDisplayName: Metro
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        NSHumanReadableCopyright: "© 2026 Javiera Navarrete"
+        NSLocationWhenInUseUsageDescription: "Metro usa tu ubicación aproximada para mostrar los datos de tu comuna o estación más cercana. No se guarda ni se comparte."
+  Metro-iOS:
+    type: application
+    platform: iOS
+    sources: [Comun, Metro, { path: Recursos/web, type: folder, buildPhase: resources }, Recursos/Assets.xcassets]
+    settings:
+      base:
+        PRODUCT_NAME: Metro
+        PRODUCT_BUNDLE_IDENTIFIER: cl.javieranavarrete.metro
+        TARGETED_DEVICE_FAMILY: "1,2"
+    info:
+      path: Recursos/Info-iOS.plist
+      properties:
+        CFBundleDisplayName: Metro
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        ITSAppUsesNonExemptEncryption: false
+        NSLocationWhenInUseUsageDescription: "Metro usa tu ubicación aproximada para mostrar los datos de tu comuna o estación más cercana. No se guarda ni se comparte."

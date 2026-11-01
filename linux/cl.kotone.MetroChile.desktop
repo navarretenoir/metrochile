@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Metro Chile
+Comment=Estado de la red del Metro en vivo, plano y estaciones
+Comment[en]=Santiago Metro live network status, map and stations
+Exec=metro-chile
+Icon=cl.kotone.MetroChile
+Terminal=false
+Categories=Network;GTK;
+Keywords=metro;santiago;transporte;líneas;estaciones;subway;
+StartupWMClass=cl.kotone.MetroChile
+StartupNotify=true
+X-Developer=Javiera Navarrete

@@ -1,0 +1,18 @@
+ACUERDO DE USO — METRO DE SANTIAGO
+Desarrollado por Javiera Navarrete · Versión 2.0 · 2026
+
+1. Uso. Puedes instalar y usar esta aplicación sin costo, y compartir el instalador original sin modificarlo,
+   citando a su autora.
+
+2. App no oficial. No está afiliada, patrocinada ni aprobada por Metro S.A. Muestra datos públicos de metro.cl;
+   pueden tener retraso o errores. Ante cualquier duda, sigue la información oficial en estaciones y en metro.cl.
+
+3. Privacidad. La aplicación consulta metro.cl y Open-Meteo. No envía datos personales, no tiene publicidad,
+   no se inicia sola con Windows y sólo guarda sus preferencias en %LOCALAPPDATA%\MetroChile.
+
+4. Componentes. Usa Microsoft Edge WebView2 (incluido en Windows 10/11) y WebView2Loader.dll de Microsoft.
+
+5. Sin garantía. Se entrega «tal cual», sin garantías. La autora no responde por daños derivados de su uso,
+   en la medida que la ley lo permita.
+
+Al hacer clic en «Acepto» declaras haber leído este acuerdo.

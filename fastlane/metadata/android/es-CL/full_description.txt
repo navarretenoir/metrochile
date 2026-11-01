@@ -1,0 +1,10 @@
+Metro Chile muestra en vivo el estado de las líneas y estaciones del Metro de Santiago, el plano de la red, la estación más cercana y el clima del lugar.
+
+• Estado oficial de cada línea y estación, tal como lo publica metro.cl.
+• Aviso cuando aparece un problema nuevo en la red.
+• Plano de la red y estación más cercana.
+• Sin publicidad, sin rastreadores, sin cuentas. Funciona desde Android 5.0.
+
+App NO oficial: no está afiliada a Metro S.A. ni la representa. Los datos vienen del sitio público de Metro de Santiago y de Open-Meteo.
+
+Desarrollado por Javiera Navarrete.
