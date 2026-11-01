@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Metro Chile para Android (port de ~/Proyectos/METRO_SCL). Kotone 2026-10-31. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Now Bar de Samsung = Live Updates de Android 16 -->
+    <uses-permission android:name="android.permission.POST_PROMOTED_NOTIFICATIONS" />
+
+    <!-- enlace con ADO O260T (bici) y Clima: permiso de FIRMA compartido entre las tres apps -->
+    <permission android:name="org.kotone.clima.permission.ALERTAS"
+        android:label="Alertas de Clima" android:protectionLevel="signature" />
+    <uses-permission android:name="org.kotone.clima.permission.ALERTAS" />
+    <queries>
+        <package android:name="com.bicipro.app" />
+        <package android:name="org.kotone.clima" />
+    </queries>
+
+    <application
+        android:label="Metro Chile"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:theme="@style/Metro">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- vigía del estado de la red: job periódico (15 min, con red); se re-programa al reiniciar -->
+        <provider android:name=".MetroProveedor" android:authorities="org.kotone.metro.estado"
+            android:exported="true" android:permission="org.kotone.clima.permission.ALERTAS" />
+        <service android:name=".Vigia" android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <receiver android:name=".Vigia$Arranque" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

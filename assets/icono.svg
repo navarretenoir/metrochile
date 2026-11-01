@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Metro Chile — ícono genérico (frente de tren subterráneo). Original de Javiera Navarrete, GPL-3.0. -->
+  <defs>
+    <linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b6fd6"/><stop offset="1" stop-color="#1747a6"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#f)"/>
+  <!-- túnel -->
+  <path d="M96 440 V250 a160 160 0 0 1 320 0 V440" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="22"/>
+  <!-- carrocería -->
+  <rect x="146" y="128" width="220" height="250" rx="46" fill="#ffffff"/>
+  <!-- parabrisas -->
+  <rect x="172" y="160" width="168" height="96" rx="18" fill="#1d3f7a"/>
+  <!-- letrero -->
+  <rect x="210" y="138" width="92" height="14" rx="7" fill="#f4b400"/>
+  <!-- focos -->
+  <circle cx="196" cy="312" r="18" fill="#f4b400"/>
+  <circle cx="316" cy="312" r="18" fill="#f4b400"/>
+  <rect x="236" y="300" width="40" height="24" rx="6" fill="#c8d3e6"/>
+  <!-- ruedas y rieles -->
+  <path d="M176 378 L150 420 M336 378 L362 420" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M110 428 H402" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+</svg>

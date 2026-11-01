@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Metro Chile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Metro Chile — interfaz única para escritorio (GTK4/WebKit) y Android (WebView). Lenguaje de diseño de Clima.
+     Datos: API oficial de metro.cl (vía el puente del host). Enlaces: Clima (tiempo) y ADO O260T (ir en bici). Kotone 2026-10-31. -->
+<div id="app">
+  <div id="col-a">
+    <header class="top">
+      <div>
+        <h1>Metro Chile</h1>
+        <div class="sub" id="sub">Cargando…</div>
+      </div>
+      <button class="round" id="btn-refresh" aria-label="Actualizar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>
+      </button>
+    </header>
+
+    <div class="buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input id="q" type="search" placeholder="Buscar estación" autocomplete="off"><div id="sugerencias" class="card sug" hidden></div></div>
+
+    <section class="hero" id="hero"></section>
+    <div class="fila2">
+      <section class="card mini" id="horario"></section>
+      <section class="card mini" id="tiempo" hidden></section>
+    </div>
+    <section class="card" id="favoritas" hidden></section>
+    <section class="card cerca" id="cerca" hidden></section>
+
+    <div class="seg solo-angosto" role="tablist">
+      <button class="on" data-v="lineas" role="tab">Líneas</button>
+      <button data-v="plano" role="tab">Plano</button>
+    </div>
+    <section id="v-lineas" class="card lineas"></section>
+    <div class="pie" id="pie">Fuente: metro.cl · estado oficial en vivo</div>
+    <div class="credito">Desarrollado por Javiera Navarrete</div>
+  </div>
+
+  <div id="col-b">
+    <section id="v-plano" class="card plano">
+      <div class="th"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Plano de la red</div>
+      <div class="chips-lineas" id="chips-lineas"></div>
+      <div class="plano-wrap" id="plano-wrap"><svg id="plano" xmlns="http://www.w3.org/2000/svg"></svg></div>
+      <div class="leyenda">
+        <span><i class="dot ok"></i>Operativa</span><span><i class="dot mal"></i>Con problemas</span>
+        <span><i class="dot comb"></i>Combinación</span><span><i class="ex roja"></i>Ruta roja</span><span><i class="ex verde"></i>Ruta verde</span>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div id="sheet-bg" hidden></div>
+<section id="sheet" aria-hidden="true"></section>
+<div id="aviso"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

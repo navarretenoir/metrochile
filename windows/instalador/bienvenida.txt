@@ -1,0 +1,9 @@
+Metro Chile muestra en vivo el estado de las líneas y estaciones del Metro, el plano de la red y el clima del lugar.
+
+Características:
+  • Estado de cada línea y estación, con avisos de cierres y demoras
+  • Plano de la red y combinaciones
+  • Estaciones favoritas
+  • Funciona con Windows 10 y 11 (y 7/8.1 con Microsoft Edge WebView2)
+
+App no oficial: no está afiliada a Metro S.A. Los datos son públicos de metro.cl.

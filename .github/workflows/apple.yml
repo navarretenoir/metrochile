@@ -1,0 +1,16 @@
+# Compila Metro para macOS (universal) e iOS en un Mac de GitHub (sin firma: para probar; firmar requiere cuenta de Apple).
+name: Metro Apple
+on: [workflow_dispatch, push]
+jobs:
+  compilar:
+    runs-on: macos-14
+    defaults: { run: { working-directory: apple } }
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install xcodegen
+      - run: ./preparar-web.sh && xcodegen generate
+      - run: xcodebuild -project Metro.xcodeproj -scheme Metro-macOS -configuration Release -destination 'generic/platform=macOS' CODE_SIGNING_ALLOWED=NO build SYMROOT=$PWD/build
+      - run: xcodebuild -project Metro.xcodeproj -scheme Metro-iOS -configuration Release -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO build SYMROOT=$PWD/build
+      - run: lipo -info "build/Release/Metro.app/Contents/MacOS/Metro"
+      - uses: actions/upload-artifact@v4
+        with: { name: Metro-apple, path: "apple/build/Release*/*.app" }

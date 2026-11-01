@@ -1,0 +1,1 @@
+Metro Chile shows the live status of Santiago Metro lines and stations, the network map, the nearest station and local weather. Alerts you when a new problem appears. UNOFFICIAL: not affiliated with or endorsed by Metro S.A. Data from metro.cl and Open-Meteo. No ads, no trackers. Android 5.0+. Developed by Javiera Navarrete. (Interface in Spanish.)

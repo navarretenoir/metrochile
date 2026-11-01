@@ -1,0 +1,1222 @@
+{
+    "l1": {
+        "estado": "1",
+        "mensaje": "",
+        "mensaje_app": "L\u00ednea disponible",
+        "estaciones": [
+            {
+                "nombre": "San Pablo L1",
+                "codigo": "SP",
+                "estado": "1",
+                "combinacion": "L5",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Neptuno",
+                "codigo": "NP",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Pajaritos",
+                "codigo": "PJ",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Las Rejas",
+                "codigo": "LR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Ecuador",
+                "codigo": "EC",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "San Alberto Hurtado",
+                "codigo": "AH",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Universidad de Santiago",
+                "codigo": "US",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Estaci\u00f3n Central",
+                "codigo": "EL",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "U.L.A.",
+                "codigo": "LA",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Rep\u00fablica",
+                "codigo": "RP",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Los H\u00e9roes L1",
+                "codigo": "LH",
+                "estado": "1",
+                "combinacion": "L2",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "La Moneda",
+                "codigo": "LM",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Universidad de Chile L1",
+                "codigo": "CH",
+                "estado": "1",
+                "combinacion": "L3",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Santa Luc\u00eda",
+                "codigo": "SL",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Universidad Cat\u00f3lica",
+                "codigo": "UC",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Baquedano L1",
+                "codigo": "BA",
+                "estado": "1",
+                "combinacion": "L5",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Salvador",
+                "codigo": "SA",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Manuel Montt",
+                "codigo": "MM",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Pedro de Valdivia",
+                "codigo": "PV",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Los Leones L1",
+                "codigo": "LE",
+                "estado": "1",
+                "combinacion": "L6",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Tobalaba L1",
+                "codigo": "TB",
+                "estado": "1",
+                "combinacion": "L4",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "El Golf",
+                "codigo": "GO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Alc\u00e1ntara",
+                "codigo": "AL",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Escuela Militar",
+                "codigo": "EM",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Manquehue",
+                "codigo": "MQ",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Hernando de Magallanes",
+                "codigo": "HM",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            },
+            {
+                "nombre": "Los Dominicos",
+                "codigo": "LD",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada",
+                "mensaje": ""
+            }
+        ]
+    },
+    "l2": {
+        "estado": "1",
+        "mensaje": "",
+        "mensaje_app": "L\u00ednea disponible",
+        "estaciones": [
+            {
+                "nombre": "Vespucio Norte",
+                "codigo": "AV",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Zapadores",
+                "codigo": "ZA",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Dorsal",
+                "codigo": "DO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Einstein",
+                "codigo": "EI",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Cementerios",
+                "codigo": "CE",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Cerro Blanco",
+                "codigo": "CB",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Patronato",
+                "codigo": "PT",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Puente Cal y Canto L2",
+                "codigo": "CA",
+                "estado": "1",
+                "combinacion": "L3",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Santa Ana L2",
+                "codigo": "AN",
+                "estado": "1",
+                "combinacion": "L5",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Los H\u00e9roes L2",
+                "codigo": "HE",
+                "estado": "1",
+                "combinacion": "L1",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Toesca",
+                "codigo": "TO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Parque O'Higgins",
+                "codigo": "PQ",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Rondizzoni",
+                "codigo": "RO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Franklin L2",
+                "codigo": "FR",
+                "estado": "1",
+                "combinacion": "L6",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "El Llano",
+                "codigo": "LL",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "San Miguel",
+                "codigo": "SM",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Lo Vial",
+                "codigo": "LV",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Departamental",
+                "codigo": "DE",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Ciudad del Ni\u00f1o",
+                "codigo": "CN",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Lo Ovalle",
+                "codigo": "LO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "El Parr\u00f3n",
+                "codigo": "EP",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "La Cisterna L2",
+                "codigo": "LC",
+                "estado": "1",
+                "combinacion": "L4a",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "El Bosque",
+                "codigo": "EB",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Observatorio",
+                "codigo": "OB",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Copa Lo Martinez",
+                "codigo": "CM",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Hospital El Pino",
+                "codigo": "PI",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            }
+        ]
+    },
+    "l3": {
+        "estado": "1",
+        "mensaje": "",
+        "mensaje_app": "L\u00ednea disponible",
+        "estaciones": [
+            {
+                "nombre": "Plaza Quilicura",
+                "codigo": "PQU",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Lo Cruzat",
+                "codigo": "LCR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Ferrocarril",
+                "codigo": "FER",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Los Libertadores",
+                "codigo": "LIB",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Cardenal Caro",
+                "codigo": "CAR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Vivaceta",
+                "codigo": "VIV",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Conchal\u00ed",
+                "codigo": "CCH",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Plaza Chacabuco",
+                "codigo": "PZC",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Hospitales",
+                "codigo": "HOS",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Puente Cal y Canto L3",
+                "codigo": "PCA",
+                "estado": "1",
+                "combinacion": "L2",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Plaza de Armas L3",
+                "codigo": "PZA",
+                "estado": "1",
+                "combinacion": "L5",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Universidad de Chile L3",
+                "codigo": "UCH",
+                "estado": "1",
+                "combinacion": "L1",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Parque Almagro",
+                "codigo": "PAL",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Matta",
+                "codigo": "MAT",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Irarr\u00e1zaval L3",
+                "codigo": "IRA",
+                "estado": "1",
+                "combinacion": "L5",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Monse\u00f1or Eyzaguirre",
+                "codigo": "MEY",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "\u00d1u\u00f1oa L3",
+                "codigo": "NUN",
+                "estado": "1",
+                "combinacion": "L6",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Chile Espa\u00f1a",
+                "codigo": "ESP",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Villa Frei",
+                "codigo": "VFR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Plaza Ega\u00f1a L3",
+                "codigo": "PZE",
+                "estado": "1",
+                "combinacion": "L4",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Fernando Castillo Velasco",
+                "codigo": "FCV",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            }
+        ]
+    },
+    "l4": {
+        "estado": "1",
+        "mensaje": "",
+        "mensaje_app": "L\u00ednea disponible",
+        "estaciones": [
+            {
+                "nombre": "Tobalaba L4",
+                "codigo": "TOB",
+                "estado": "1",
+                "combinacion": "L1",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Crist\u00f3bal Col\u00f3n",
+                "codigo": "COL",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Francisco Bilbao",
+                "codigo": "BIL",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Pr\u00edncipe de Gales",
+                "codigo": "PDG",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Sim\u00f3n Bolivar",
+                "codigo": "SBO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Plaza Ega\u00f1a L4",
+                "codigo": "PEG",
+                "estado": "1",
+                "combinacion": "L3",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Los Orientales",
+                "codigo": "LOR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Grecia",
+                "codigo": "RGR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Los Presidentes",
+                "codigo": "LPR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Quil\u00edn",
+                "codigo": "RQU",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Las Torres",
+                "codigo": "LTO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Macul",
+                "codigo": "MAC",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Vicu\u00f1a Mackenna L4",
+                "codigo": "VMA",
+                "estado": "1",
+                "combinacion": "L4a",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Vicente Vald\u00e9s L4",
+                "codigo": "VVA",
+                "estado": "1",
+                "combinacion": "L5",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Rojas Magallanes",
+                "codigo": "RMA",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Trinidad",
+                "codigo": "TRI",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "San Jos\u00e9 de la Estrella",
+                "codigo": "SJE",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Los Quillayes",
+                "codigo": "LQU",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Elisa Correa",
+                "codigo": "ECO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Hospital S\u00f3tero del R\u00edo",
+                "codigo": "HSR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Protectora de la Infancia",
+                "codigo": "PIN",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Las Mercedes",
+                "codigo": "LME",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Plaza de Puente Alto",
+                "codigo": "PPA",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            }
+        ]
+    },
+    "l4a": {
+        "estado": "1",
+        "mensaje": "",
+        "mensaje_app": "L\u00ednea disponible",
+        "estaciones": [
+            {
+                "nombre": "Vicu\u00f1a Mackenna L4A",
+                "codigo": "VIM",
+                "estado": "1",
+                "combinacion": "L4",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Santa Julia",
+                "codigo": "SJU",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "La Granja",
+                "codigo": "LGR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Santa Rosa",
+                "codigo": "SRO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "San Ram\u00f3n",
+                "codigo": "SRA",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "La Cisterna L4A",
+                "codigo": "LCI",
+                "estado": "1",
+                "combinacion": "L2",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            }
+        ]
+    },
+    "l5": {
+        "estado": "1",
+        "mensaje": "",
+        "mensaje_app": "L\u00ednea disponible",
+        "estaciones": [
+            {
+                "nombre": "Plaza de Maip\u00fa",
+                "codigo": "PM",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Santiago Bueras",
+                "codigo": "SB",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Del Sol",
+                "codigo": "DS",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Monte Tabor",
+                "codigo": "MT",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Las Parcelas",
+                "codigo": "LP",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Laguna Sur",
+                "codigo": "LS",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Barrancas",
+                "codigo": "BR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Pudahuel",
+                "codigo": "PU",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "San Pablo L5",
+                "codigo": "SO",
+                "estado": "1",
+                "combinacion": "L1",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Lo Prado",
+                "codigo": "PR",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Blanqueado",
+                "codigo": "BL",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Gruta de Lourdes",
+                "codigo": "GL",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Quinta Normal",
+                "codigo": "QN",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Cumming",
+                "codigo": "RC",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Santa Ana L5",
+                "codigo": "NA",
+                "estado": "1",
+                "combinacion": "L2",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Plaza de Armas L5",
+                "codigo": "PZ",
+                "estado": "1",
+                "combinacion": "L3",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Bellas Artes",
+                "codigo": "BE",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Baquedano L5",
+                "codigo": "BQ",
+                "estado": "1",
+                "combinacion": "L1",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Parque Bustamante",
+                "codigo": "PB",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Santa Isabel",
+                "codigo": "SI",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Irarr\u00e1zaval L5",
+                "codigo": "IR",
+                "estado": "1",
+                "combinacion": "L3",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "\u00d1uble L5",
+                "codigo": "NU",
+                "estado": "1",
+                "combinacion": "L6",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Rodrigo de Araya",
+                "codigo": "RA",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Carlos Valdovinos",
+                "codigo": "CV",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Camino Agr\u00edcola",
+                "codigo": "AG",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "San Joaqu\u00edn",
+                "codigo": "SJ",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Pedrero",
+                "codigo": "PE",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Mirador",
+                "codigo": "MA",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Bellavista de La Florida",
+                "codigo": "LF",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Vicente Vald\u00e9s L5",
+                "codigo": "VV",
+                "estado": "1",
+                "combinacion": "L4",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            }
+        ]
+    },
+    "l6": {
+        "estado": "1",
+        "mensaje": "",
+        "mensaje_app": "L\u00ednea disponible",
+        "estaciones": [
+            {
+                "nombre": "Cerrillos",
+                "codigo": "CER",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Lo Valledor",
+                "codigo": "LVA",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Pdte. Pedro Aguirre Cerda",
+                "codigo": "PAC",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Franklin L6",
+                "codigo": "FRA",
+                "estado": "1",
+                "combinacion": "L2",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "B\u00edo B\u00edo",
+                "codigo": "BIO",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "\u00d1uble L6",
+                "codigo": "NUB",
+                "estado": "1",
+                "combinacion": "L5",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Estadio Nacional",
+                "codigo": "ESN",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "\u00d1u\u00f1oa L6",
+                "codigo": "NUO",
+                "estado": "1",
+                "combinacion": "L3",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "In\u00e9s de Su\u00e1rez",
+                "codigo": "ISU",
+                "estado": "1",
+                "combinacion": "",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            },
+            {
+                "nombre": "Los Leones L6",
+                "codigo": "LEN",
+                "estado": "1",
+                "combinacion": "L1",
+                "descripcion": "Estaci\u00f3n Operativa",
+                "descripcion_app": "Habilitada"
+            }
+        ]
+    }
+}
