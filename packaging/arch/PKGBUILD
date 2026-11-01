@@ -1,0 +1,28 @@
+# Maintainer: Javiera Navarrete <navarrete.noir@gmail.com>
+pkgname=metro-chile
+pkgver=2.1.1
+pkgrel=1
+pkgdesc="Estado en vivo de la red del Metro de Santiago (app no oficial)"
+arch=('x86_64')
+url="https://github.com/navarretenoir/metrochile"
+license=('GPL-3.0-or-later')
+depends=('gtk4' 'webkitgtk-6.0' 'json-glib' 'curl')
+makedepends=('gcc' 'make' 'pkgconf')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/navarretenoir/metrochile/archive/refs/tags/v$pkgver.tar.gz")
+sha256sums=('SKIP')   # actualizar con updpkgsums
+
+build() {
+  cd "metrochile-$pkgver"
+  make -C desktop ROOT=/usr/share/metro-chile EXTRA_CFLAGS="$CFLAGS $LDFLAGS"
+}
+
+package() {
+  cd "metrochile-$pkgver"
+  local D="$pkgdir"
+  install -Dm755 desktop/metro-app "$D/usr/bin/metro-chile"
+  install -d "$D/usr/share/metro-chile"; cp -r ui "$D/usr/share/metro-chile/"
+  install -Dm644 linux/io.github.navarretenoir.MetroChile.desktop "$D/usr/share/applications/io.github.navarretenoir.MetroChile.desktop"
+  install -Dm644 linux/io.github.navarretenoir.MetroChile.metainfo.xml "$D/usr/share/metainfo/io.github.navarretenoir.MetroChile.metainfo.xml"
+  install -Dm644 linux/io.github.navarretenoir.MetroChile.svg "$D/usr/share/icons/hicolor/scalable/apps/io.github.navarretenoir.MetroChile.svg"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
