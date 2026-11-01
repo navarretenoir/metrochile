@@ -21,7 +21,7 @@ targets:
     sources: [Comun, Metro, { path: Recursos/web, type: folder, buildPhase: resources }, Recursos/Assets.xcassets]
     settings:
       base:
-        PRODUCT_NAME: Metro
+        PRODUCT_NAME: "Metro Chile"
         PRODUCT_BUNDLE_IDENTIFIER: cl.javieranavarrete.metro
         ARCHS: "$(ARCHS_STANDARD)"          # arm64 + x86_64: corre nativo en Apple Silicon e Intel
         ONLY_ACTIVE_ARCH: NO
@@ -31,25 +31,25 @@ targets:
     info:
       path: Recursos/Info-macOS.plist
       properties:
-        CFBundleDisplayName: Metro
+        CFBundleDisplayName: "Metro Chile"
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
         NSHumanReadableCopyright: "© 2026 Javiera Navarrete"
-        NSLocationWhenInUseUsageDescription: "Metro usa tu ubicación aproximada para mostrar los datos de tu comuna o estación más cercana. No se guarda ni se comparte."
+        NSLocationWhenInUseUsageDescription: "Metro Chile usa tu ubicación aproximada para mostrar los datos de tu comuna o estación más cercana. No se guarda ni se comparte."
   Metro-iOS:
     type: application
     platform: iOS
     sources: [Comun, Metro, { path: Recursos/web, type: folder, buildPhase: resources }, Recursos/Assets.xcassets]
     settings:
       base:
-        PRODUCT_NAME: Metro
+        PRODUCT_NAME: "Metro Chile"
         PRODUCT_BUNDLE_IDENTIFIER: cl.javieranavarrete.metro
         TARGETED_DEVICE_FAMILY: "1,2"
     info:
       path: Recursos/Info-iOS.plist
       properties:
-        CFBundleDisplayName: Metro
+        CFBundleDisplayName: "Metro Chile"
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
         UILaunchScreen: {}
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
         ITSAppUsesNonExemptEncryption: false
-        NSLocationWhenInUseUsageDescription: "Metro usa tu ubicación aproximada para mostrar los datos de tu comuna o estación más cercana. No se guarda ni se comparte."
+        NSLocationWhenInUseUsageDescription: "Metro Chile usa tu ubicación aproximada para mostrar los datos de tu comuna o estación más cercana. No se guarda ni se comparte."
