@@ -14,8 +14,8 @@
     <p xml:lang="en">Metro Chile shows the live status of Santiago Metro lines and stations, the network map, the nearest station and local weather. Unofficial app, not affiliated with Metro S.A. No ads, no trackers. Developed by Javiera Navarrete.</p>
   </description>
   <url type="homepage">https://github.com/navarretenoir/metrochile</url>
-  <url type="vcs-browser">https://gitlab.com/navarretenoir/metrochile</url>
-  <url type="bugtracker">https://gitlab.com/navarretenoir/metrochile/-/issues</url>
+  <url type="vcs-browser">https://github.com/navarretenoir/metrochile</url>
+  <url type="bugtracker">https://github.com/navarretenoir/metrochile/issues</url>
   <screenshots>
     <screenshot type="default"><image>https://raw.githubusercontent.com/navarretenoir/metrochile/main/screenshots/1.png</image></screenshot>
   </screenshots>
