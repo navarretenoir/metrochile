@@ -89,7 +89,13 @@
     return [...m.values()];
   }
 
+  let actualizando = false;
   async function actualizar() {
+    if (actualizando) return;
+    actualizando = true;
+    try { await actualizar0(); } finally { actualizando = false; }
+  }
+  async function actualizar0() {
     const b = $("btn-refresh"); b.classList.add("spin");
     if (!Object.keys(INFO).length) await cargarEstaciones();
     const t = await get(API_ESTADO);
@@ -120,13 +126,30 @@
     nube: S('<path d="M7 18h10a4 4 0 0 0 .6-8 6 6 0 0 0-11.6 1.5A3.3 3.3 0 0 0 7 18z"/>'),
   };
   const hm = ts => { const d = new Date(ts); return d.getHours() + ":" + String(d.getMinutes()).padStart(2, "0"); };
+  // «último dato»: si no es de hoy se dice el día (antes sólo mostraba la hora y un dato de ayer parecía reciente)
+  const cuando = ts => {
+    const d = new Date(ts), h = new Date(), ayer = new Date(h.getTime() - 864e5);
+    if (d.toDateString() === h.toDateString()) return hm(ts);
+    if (d.toDateString() === ayer.toDateString()) return "ayer " + hm(ts);
+    return d.getDate() + "/" + (d.getMonth() + 1) + " " + hm(ts);
+  };
+  // Reloj de Santiago (el servicio del Metro y el pronóstico van en hora de Santiago, aunque el teléfono esté en otra zona)
+  function ahoraScl(f) {
+    try {
+      const p = {}; new Intl.DateTimeFormat("en-US", { timeZone: "America/Santiago", hour12: false, weekday: "short", hour: "2-digit", minute: "2-digit" })
+        .formatToParts(f || new Date()).forEach(x => { p[x.type] = x.value; });
+      const dia = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday);
+      if (dia >= 0) return { dia, hora: (+p.hour) % 24, min: ((+p.hour) % 24) * 60 + (+p.minute) };
+    } catch (e) { }
+    const d = f || new Date(); return { dia: d.getDay(), hora: d.getHours(), min: d.getHours() * 60 + d.getMinutes() };
+  }
   const badge = (k, sm) => `<span class="badge${sm ? " sm" : ""}" style="background:${COLOR[k]};color:${TXT_BADGE[k] || "#fff"}">${k.slice(1).toUpperCase()}</span>`;
   const dist = (a, b, c, d) => { const k = Math.PI / 180, x = (d - b) * k * Math.cos((a + c) / 2 * k), y = (c - a) * k; return Math.sqrt(x * x + y * y) * 6371000; };
   const fmtDist = m => m < 1000 ? Math.round(m / 10) * 10 + " m" : (m / 1000).toFixed(1).replace(".", ",") + " km";
 
   // ---------------------------------------------------------------- horario habitual (sin festivos)
   function horario() {
-    const d = new Date(), dia = d.getDay(), min = d.getHours() * 60 + d.getMinutes();
+    const { dia, min } = ahoraScl();
     const tramo = x => x === 0 ? [7 * 60 + 30, 22 * 60 + 30] : x === 6 ? [6 * 60 + 30, 23 * 60] : [6 * 60, 23 * 60];
     const H = tramo(dia), f = m => Math.floor(m / 60) + ":" + String(m % 60).padStart(2, "0");
     const abierto = min >= H[0] && min < H[1];
@@ -136,7 +159,7 @@
 
   // ---------------------------------------------------------------- pintura
   function pintar(sinRed) {
-    $("sub").textContent = !ESTADO ? (sinRed ? "Sin conexión" : "Cargando…") : (sinRed ? `Sin conexión · último dato ${hm(ultimo)}` : `Actualizado ${hm(ultimo)}`);
+    $("sub").textContent = !ESTADO ? (sinRed ? "Sin conexión" : "Cargando…") : (sinRed ? `Sin conexión · último dato ${cuando(ultimo)}` : `Actualizado ${cuando(ultimo)}`);
     const h = $("hero");
     if (!ESTADO) {
       h.className = "hero off"; h.innerHTML = `<div class="ic">${ICON.off}</div><div><div class="t">Sin datos todavía</div><div class="s">Revisa la conexión a internet.</div></div>`;
@@ -144,7 +167,7 @@
     }
     const ps = problemas(ESTADO), lineasMal = [...new Set(ps.map(p => p.linea))];
     const franja = `<div class="franja">${LINEAS.filter(k => ESTADO[k]).map(k => `<i class="${lineasMal.includes(k) ? "mal" : ""}" style="background:${COLOR[k]}" title="${nombreLinea(k)}"></i>`).join("")}</div>`;
-    if (!ps.length) h.className = "hero ok", h.innerHTML = `<div class="ic">${ICON.ok}</div><div style="flex:1"><div class="t">Toda la red opera con normalidad</div><div class="s">7 líneas · 143 estaciones habilitadas</div>${franja}</div>`;
+    if (!ps.length) h.className = "hero ok", h.innerHTML = `<div class="ic">${ICON.ok}</div><div style="flex:1"><div class="t">Toda la red opera con normalidad</div><div class="s">${LINEAS.filter(k => ESTADO[k]).length} líneas · ${LINEAS.reduce((n, k) => n + (ESTADO[k] && ESTADO[k].estaciones ? ESTADO[k].estaciones.length : 0), 0)} estaciones habilitadas</div>${franja}</div>`;
     else {
       const est = ps.filter(p => p.cod).length;
       h.className = "hero mal";
@@ -164,6 +187,7 @@
     }).join("");
     document.querySelectorAll("#v-lineas .row").forEach(r => r.onclick = () => abrirLinea(r.dataset.l));
     pintarFavoritas(); pintarCerca();
+    accesibles($("v-lineas"));
     if (vista === "plano" || window.innerWidth >= 900) pintarPlano();
   }
 
@@ -181,7 +205,7 @@
       const c = om.current, d = om.daily || {};
       if (!CLIMA || !CLIMA.ok) {
         // sin Clima (escritorio o app no instalada): los mismos avisos básicos, calculados aquí
-        const hh = new Date().getHours(), pp = (om.hourly.precipitation_probability || []).slice(hh + 1, hh + 4), al = [];
+        const hh = ahoraScl().hora, pp = (om.hourly.precipitation_probability || []).slice(hh + 1, hh + 4), al = [];
         const iMax = pp.indexOf(Math.max(...pp));
         if (c.weather_code >= 95) al.push({ id: "tormenta", nivel: "danger", titulo: "Tormenta eléctrica" });
         else if (c.weather_code >= 51) al.push({ id: "lluvia", nivel: "warn", titulo: "Lloviendo ahora" });
@@ -220,7 +244,7 @@
     box.hidden = false;
     box.innerHTML = `<div class="th">${ICON.estrella.replace("<svg", '<svg style="color:#FFD60A"')}Mis estaciones</div>`
       + L.map(e => filaEstacion(e, POS && isFinite(e.lat) ? fmtDist(dist(POS.lat, POS.lon, e.lat, e.lon)) : "")).join("");
-    box.querySelectorAll(".row").forEach(r => r.onclick = () => abrirEstacion(r.dataset.est));
+    box.querySelectorAll(".row").forEach(r => r.onclick = () => abrirEstacion(r.dataset.est)); accesibles(box);
   }
   function pintarCerca() {
     const box = $("cerca");
@@ -229,7 +253,7 @@
     if (!L.length || L[0].m > 8000) { box.hidden = true; return; }
     box.hidden = false;
     box.innerHTML = `<div class="th">${ICON.pin}Cerca de ti</div>` + L.map(o => filaEstacion(o.e, fmtDist(o.m))).join("");
-    box.querySelectorAll(".row").forEach(r => r.onclick = () => abrirEstacion(r.dataset.est));
+    box.querySelectorAll(".row").forEach(r => r.onclick = () => abrirEstacion(r.dataset.est)); accesibles(box);
   }
 
   // ---------------------------------------------------------------- búsqueda
@@ -239,17 +263,30 @@
     const L = estaciones().filter(e => fold(e.nombre).includes(q)).sort((a, b) => fold(a.nombre).indexOf(q) - fold(b.nombre).indexOf(q)).slice(0, 8);
     box.innerHTML = L.length ? L.map(e => filaEstacion(e, "")).join("") : `<div class="err">Sin estaciones con «${esc($("q").value)}»</div>`;
     box.hidden = false;
-    box.querySelectorAll(".row").forEach(r => r.onclick = () => { box.hidden = true; $("q").value = ""; $("q").blur(); abrirEstacion(r.dataset.est); });
+    box.querySelectorAll(".row").forEach(r => r.onclick = () => { box.hidden = true; $("q").value = ""; $("q").blur(); abrirEstacion(r.dataset.est); }); accesibles(box);
   });
   document.addEventListener("click", e => { if (!e.target.closest(".buscar")) $("sugerencias").hidden = true; });
 
   // ---------------------------------------------------------------- hojas
   const btnX = `<button class="round x" id="sh-x" aria-label="Cerrar">${S('<path d="M6 6l12 12M18 6L6 18"/>')}</button>`;
+  // las filas se pintan como <div>: se vuelven botones para teclado y lectores de pantalla
+  function accesibles(raiz) {
+    (raiz || document).querySelectorAll(".row, .est-row").forEach(r => {
+      if (r.getAttribute("role")) return;
+      r.setAttribute("role", "button"); r.tabIndex = 0;
+      const n = r.querySelector(".n"), d = r.querySelector(".d");
+      r.setAttribute("aria-label", ((n ? n.textContent : "") + (d && d.textContent.trim() ? ". " + d.textContent.trim() : "")).trim());
+      r.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); r.click(); } });
+    });
+  }
   function abrirHoja(html) {
     $("sheet").innerHTML = `<div class="grab"></div>` + html;
     $("sheet-bg").hidden = false; $("sheet").classList.add("show"); $("sheet").setAttribute("aria-hidden", "false"); $("sheet").scrollTop = 0;
     const x = $("sh-x"); if (x) x.onclick = cerrarHoja;
+    $("sheet").setAttribute("role", "dialog"); $("sheet").setAttribute("aria-modal", "true");
+    accesibles($("sheet")); if (x) { try { x.focus({ preventScroll: true }); } catch (e) { } }
   }
+  document.addEventListener("keydown", e => { if (e.key === "Escape") window.metroAtras(); });
   function cerrarHoja() { $("sheet").classList.remove("show"); $("sheet").setAttribute("aria-hidden", "true"); $("sheet-bg").hidden = true; }
   window.metroAtras = () => {
     if ($("sheet").classList.contains("show")) { cerrarHoja(); return true; }

@@ -89,6 +89,9 @@ public class Vigia extends JobService {
         if (!forzar && !enServicio()) return 0;
         String t = get(API); if (t == null) return 0;
         JSONObject e = new JSONObject(t);
+        // respuesta incompleta o de otro formato (sin línea 1): no se toca la lista de vigentes, para no
+        // marcar como «resueltos» los problemas reales ni repetir los avisos en la revisión siguiente
+        if (e.optJSONObject("l1") == null) { Log.w(TAG, "respuesta sin datos de líneas; se ignora"); return 0; }
         SharedPreferences sp = c.getSharedPreferences("vigia", MODE_PRIVATE);
         Set<String> antes = forzar ? new HashSet<>() : new HashSet<>(sp.getStringSet("vigentes", new HashSet<>()));
         boolean primera = !forzar && !sp.contains("vigentes");

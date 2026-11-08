@@ -14,7 +14,7 @@
     <header class="top">
       <div>
         <h1>Metro Chile</h1>
-        <div class="sub" id="sub">Cargando…</div>
+        <div class="sub" id="sub" role="status" aria-live="polite">Cargando…</div>
       </div>
       <button class="round" id="btn-refresh" aria-label="Actualizar">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>
@@ -22,7 +22,7 @@
     </header>
 
     <div class="buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
-      <input id="q" type="search" placeholder="Buscar estación" autocomplete="off"><div id="sugerencias" class="card sug" hidden></div></div>
+      <input id="q" type="search" placeholder="Buscar estación" aria-label="Buscar estación" autocomplete="off" enterkeyhint="search"><div id="sugerencias" class="card sug" hidden></div></div>
 
     <section class="hero" id="hero"></section>
     <div class="fila2">
@@ -56,7 +56,7 @@
 
 <div id="sheet-bg" hidden></div>
 <section id="sheet" aria-hidden="true"></section>
-<div id="aviso"></div>
+<div id="aviso" role="status" aria-live="polite"></div>
 
 <script src="app.js"></script>
 </body>
