@@ -9,8 +9,8 @@ android {
         applicationId = "org.kotone.metro"
         minSdk = 21          // Android 5.0: la mayor compatibilidad; lo moderno va protegido por versión
         targetSdk = 36
-        versionCode = 2
-        versionName = "2.1"
+        versionCode = 3
+        versionName = "2.2.0"
     }
     sourceSets["main"].apply { manifest.srcFile("AndroidManifest.xml"); java.srcDirs("src"); res.srcDirs("res"); assets.srcDirs(assetsUi) }
     buildTypes { release { isMinifyEnabled = false } }

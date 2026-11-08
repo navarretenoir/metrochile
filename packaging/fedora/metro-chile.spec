@@ -1,5 +1,5 @@
 Name:           metro-chile
-Version:        2.1.1
+Version:        2.2.0
 Release:        1%{?dist}
 Summary:        Estado en vivo de la red del Metro de Santiago (app no oficial)
 License:        GPL-3.0-or-later
@@ -43,5 +43,8 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/io.github
 
 
 %changelog
+* Sun Nov 08 2026 Javiera Navarrete <navarrete.noir@gmail.com> - 2.2.0-1
+- Versión 2.2.0 (ver CHANGELOG.md).
+
 * Sun Nov 01 2026 Javiera Navarrete <navarrete.noir@gmail.com> - 2.1.1-1
 - Paquete inicial desde el código fuente.

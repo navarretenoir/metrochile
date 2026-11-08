@@ -1,6 +1,6 @@
 # Maintainer: Javiera Navarrete <navarrete.noir@gmail.com>
 pkgname=metro-chile
-pkgver=2.1.1
+pkgver=2.2.0
 pkgrel=1
 pkgdesc="Estado en vivo de la red del Metro de Santiago (app no oficial)"
 arch=('x86_64')

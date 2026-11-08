@@ -1,0 +1,1 @@
+Accesibilidad con teclado y lector de pantalla, hora de Santiago en horario y pronóstico, y avisos de red más confiables.
