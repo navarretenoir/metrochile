@@ -211,5 +211,5 @@ body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: 
 .credito { text-align: center; font: 400 11px/14px var(--text); color: rgba(255, 255, 255, .22); margin: 18px 0 4px; letter-spacing: .01em; }
 
 /* foco visible con teclado y lector de pantalla */
-.row:focus-visible,.est-row:focus-visible,button:focus-visible,#q:focus-visible{outline:2px solid #fff;outline-offset:-2px}
+.row:focus-visible,.est-row:focus-visible,button:focus-visible,#q:focus-visible,[role="button"]:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:2px solid #fff;outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

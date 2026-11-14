@@ -13,3 +13,4 @@ herramientas/j2me/proguard-7.6.1
 herramientas/j2me/bc-j2me-src
 # binarios compilados (se generan con make)
 desktop/metro-app
+metro
