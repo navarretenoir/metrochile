@@ -1,11 +1,11 @@
-/* Metro Chile para Windows — configuración del anfitrión WebView2 (webhost.c). Desarrollado por Javiera Navarrete. */
-#define APP_NOMBRE          L"Metro Chile"
-#define APP_CLASE           L"MetroChileJavieraNavarrete"
+/* Metro de Santiago para Windows — configuración del anfitrión WebView2 (webhost.c). Desarrollado por Javiera Navarrete. */
+#define APP_NOMBRE          L"Metro de Santiago"
+#define APP_CLASE           L"MetroSCLJavieraNavarrete"
 #define APP_AGENTE          "Metro-SCL-Windows/2.0 (Javiera Navarrete)"
 #define APP_HOST_VIRTUAL    L"metro.local"
 #define APP_CARPETA_UI      L"ui"
 #define APP_INICIO          L"https://metro.local/index.html"
-#define APP_CARPETA_DATOS   L"MetroChile"
+#define APP_CARPETA_DATOS   L"MetroSCL"
 #define APP_PUENTE          1
 #define APP_VENTANAS_DENTRO 0
 #define APP_MENU_CONTEXTUAL FALSE

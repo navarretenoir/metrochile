@@ -1,4 +1,4 @@
-﻿; Instalador de Metro Chile para Windows 10/11 (y 7/8.1 con WebView2) — desarrollado por Javiera Navarrete.
+﻿; Instalador de Metro de Santiago para Windows 10/11 (y 7/8.1 con WebView2) — desarrollado por Javiera Navarrete.
 Unicode true
 SetCompressor /SOLID lzma
 !include "MUI2.nsh"
@@ -6,9 +6,9 @@ SetCompressor /SOLID lzma
 !define EXE "MetroChile"
 !define VERSION "2.2.1"
 !define AUTORA "Javiera Navarrete"
-!define CLAVE_DESINST "Software\Microsoft\Windows\CurrentVersion\Uninstall\MetroChile"
+!define CLAVE_DESINST "Software\Microsoft\Windows\CurrentVersion\Uninstall\MetroSCL"
 Name "${NOMBRE} ${VERSION}"
-OutFile "..\dist\MetroChile-${VERSION}-instalador.exe"
+OutFile "..\dist\MetroSCL-${VERSION}-instalador.exe"
 InstallDir "$PROGRAMFILES\${NOMBRE}"
 InstallDirRegKey HKLM "Software\${AUTORA}\${EXE}" "Carpeta"
 RequestExecutionLevel admin

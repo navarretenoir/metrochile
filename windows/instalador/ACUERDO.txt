@@ -8,7 +8,7 @@ Versión 2.0 · 2026
    pueden tener retraso o errores. Ante cualquier duda, sigue la información oficial en estaciones y en metro.cl.
 
 3. Privacidad. La aplicación consulta metro.cl y Open-Meteo. No envía datos personales, no tiene publicidad,
-   no se inicia sola con Windows y sólo guarda sus preferencias en %LOCALAPPDATA%\MetroChile.
+   no se inicia sola con Windows y sólo guarda sus preferencias en %LOCALAPPDATA%\MetroSCL.
 
 4. Componentes. Usa Microsoft Edge WebView2 (incluido en Windows 10/11) y WebView2Loader.dll de Microsoft.
 
