@@ -20,7 +20,6 @@ BEGIN
       VALUE "OriginalFilename", "@EXE@.exe"
       VALUE "ProductName",      "@NOMBRE@"
       VALUE "ProductVersion",   "@VERSION@"
-      VALUE "Comments",         "Desarrollado por Javiera Navarrete."
     END
   END
   BLOCK "VarFileInfo"

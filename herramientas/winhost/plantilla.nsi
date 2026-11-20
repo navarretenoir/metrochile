@@ -12,7 +12,7 @@ OutFile "..\dist\@EXE@-${VERSION}-instalador.exe"
 InstallDir "$PROGRAMFILES\${NOMBRE}"
 InstallDirRegKey HKLM "Software\${AUTORA}\${EXE}" "Carpeta"
 RequestExecutionLevel admin
-BrandingText "${NOMBRE} · desarrollado por ${AUTORA}"
+BrandingText "${NOMBRE}"
 VIProductVersion "@VERPUNTOS@"
 VIAddVersionKey /LANG=1034 "ProductName" "${NOMBRE}"
 VIAddVersionKey /LANG=1034 "CompanyName" "${AUTORA}"
@@ -23,7 +23,7 @@ VIAddVersionKey /LANG=1034 "ProductVersion" "${VERSION}"
 !define MUI_ICON "..\src\app.ico"
 !define MUI_UNICON "..\src\app.ico"
 !define MUI_WELCOMEPAGE_TITLE "Bienvenida a ${NOMBRE}"
-!define MUI_WELCOMEPAGE_TEXT "@BIENVENIDA@$\r$\n$\r$\nDesarrollado por ${AUTORA}."
+!define MUI_WELCOMEPAGE_TEXT "@BIENVENIDA@"
 !define MUI_LICENSEPAGE_TEXT_TOP "Lee el acuerdo de uso antes de instalar."
 !define MUI_FINISHPAGE_RUN "$INSTDIR\${EXE}.exe"
 !define MUI_FINISHPAGE_RUN_TEXT "Abrir ${NOMBRE} ahora"
@@ -53,7 +53,6 @@ Section "${NOMBRE}"
   WriteRegStr HKLM "${CLAVE_DESINST}" "DisplayIcon" "$INSTDIR\${EXE}.exe"
   WriteRegStr HKLM "${CLAVE_DESINST}" "InstallLocation" "$INSTDIR"
   WriteRegStr HKLM "${CLAVE_DESINST}" "UninstallString" '"$INSTDIR\Desinstalar.exe"'
-  WriteRegStr HKLM "${CLAVE_DESINST}" "Comments" "Desarrollado por ${AUTORA}"
   WriteRegDWORD HKLM "${CLAVE_DESINST}" "NoModify" 1
   WriteRegDWORD HKLM "${CLAVE_DESINST}" "NoRepair" 1
 SectionEnd

@@ -12,7 +12,7 @@
 #define APP_ANCHO           460
 #define APP_ALTO            860
 #define APP_COLOR_FONDO     RGB(0xF2, 0xF2, 0xF7)
-#define APP_ACERCA          L"Metro Chile 2.0 para Windows\n\nDesarrollado por Javiera Navarrete.\n\n" \
+#define APP_ACERCA          L"Metro Chile 2.0 para Windows\n\n" \
                             L"Estado de la red desde metro.cl (dato público). App no oficial: no está afiliada a Metro S.A.\n" \
                             L"Clima del lugar: Open-Meteo (CC BY 4.0). F5 actualiza."
 static const WCHAR *APP_FUERA[] = {L"openstreetmap.org", L"google.com/maps", L"twitter.com", L"x.com/", L"facebook.com", L"instagram.com", NULL};
